@@ -71,4 +71,3 @@ if __name__ == '__main__':
     # print(f'Good test: P: {good_p.mean().item()}, R: {good_r.mean().item()}, F1: {good_f1.mean().item()}')
     # print(f'Bad test: P: {bad_p.mean().item()}, R: {bad_r.mean().item()}, F1: {bad_f1.mean().item()}')
     # print(f'Really Bad test: P: {rbad_p.mean().item()}, R: {rbad_r.mean().item()}, F1: {rbad_f1.mean().item()}')
-    
