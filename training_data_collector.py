@@ -5,6 +5,9 @@ import pandas as pd
 import numpy as np
 import time
 
+MODEL_NAME_GPT2 = 'gpt2'
+MODEL_NAME_LLAMA = 'meta-llama/Meta-Llama-3-8B'
+MODEL_NAME_FALCON = 'tiiuae/falcon-7b'
 
 # read token from token_hugging_face.txt
 def token_grabber(possible_token=None):
@@ -45,11 +48,30 @@ def gather_data_from_ai(translation_array, language, model, token):
 
         result_array.append(response[0]['generated_text'])
 
+        time.sleep(2)
+
     return result_array
 
+# get data for one answer to test connectivity
+def get_answer_from_ai(translation_array, token):
+    login(token=token)
+
+    generator = pipeline('text-generation', model=MODEL_NAME_GPT2)
+
+    question = f"Can you translate {translation_array[0]} into English?"
+    response = generator(question, max_new_tokens=50)
+
+    print(response[0]['generated_text'])
+
+
 # converts the answer response to a csv file
-def convert_answers_array(answer_array):
-    print(answer_array)
+def convert_answers_array(answer_array, model):
+    if model == MODEL_NAME_GPT2:
+        print(answer_array)
+    elif model == MODEL_NAME_LLAMA:
+        print(answer_array)
+    elif model == MODEL_NAME_FALCON:
+        print(answer_array)
 
 # main program execution
 def main():
@@ -59,7 +81,7 @@ def main():
         token = token_grabber()
 
     spanish_data, english_data = load_data_for_translation('comma_delimited_data.csv')
-    print(token)
+    get_answer_from_ai(spanish_data, token)
 
 
 if __name__ == '__main__':
