@@ -9,3 +9,5 @@ F
 token_hugging_face.txt,9\a\9a52a8e246200f81f2388bd2bd70e6be714466ca
 J
 training_data_collector.py,b\9\b90ecf15f96e3c300c19e2e9ca9de6bce8bf29ea
+S
+#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0

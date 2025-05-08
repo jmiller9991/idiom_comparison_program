@@ -1,5 +1,5 @@
 
-Bpython:S125"Remove this commented out code.(Ο’ªΨϊÿÿÿÿ8Χκ2
-vpython:S1542"RRename function "loadAndParse" to match the regular expression ^[a-z_][a-z0-9_]*$.(ΐΨΰνϊÿÿÿÿ8Π©’χι2
-vpython:S1542>"WRename function "perform_BLEUScore" to match the regular expression ^[a-z_][a-z0-9_]*$.(ΒΉ—•8Π©’χι2
 {python:S15429"WRename function "perform_BERTScore" to match the regular expression ^[a-z_][a-z0-9_]*$.(• ²¶ϊÿÿÿÿ8Π©’χι2
+vpython:S1542>"WRename function "perform_BLEUScore" to match the regular expression ^[a-z_][a-z0-9_]*$.(ΒΉ—•8Π©’χι2
+vpython:S1542"RRename function "loadAndParse" to match the regular expression ^[a-z_][a-z0-9_]*$.(ΐΨΰνϊÿÿÿÿ8Π©’χι2
+Bpython:S125"Remove this commented out code.(Ο’ªΨϊÿÿÿÿ8Χκ2
