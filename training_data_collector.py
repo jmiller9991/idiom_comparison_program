@@ -79,13 +79,11 @@ def test_model(translation_array, model, token):
 
 
 # converts the answer response to a csv file
-def convert_answers_array(answer_array, model):
-    if model == MODEL_NAME_GPT2:
-        print(answer_array)
-    elif model == MODEL_NAME_LLAMA3:
-        print(answer_array)
-    elif model == MODEL_NAME_FALCON:
-        print(answer_array)
+def convert_answers_array(answer_array, ref_array):
+    new_array = []
+    new_array = answer_array + ref_array[0]
+
+    print(new_array)
 
 # main program execution
 def main():
